@@ -1,0 +1,23 @@
+package tester;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import model.EmployeeList;
+
+public class EmployeeListTester {
+	public static void main(String[] args) {
+		 String firstname;
+		 String lastname;
+		 int employee_id;
+		 int contact_number;
+
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<EmployeeList> emplist = new ArrayList<EmployeeList>(10);
+		System.out.println(emplist.size());
+		for (int i = 0; i < emplist.size(); i++) {
+			
+		}
+		
+	}
+}

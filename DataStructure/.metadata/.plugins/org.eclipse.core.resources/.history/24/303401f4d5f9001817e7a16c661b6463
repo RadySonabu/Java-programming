@@ -1,0 +1,8 @@
+package model;
+
+public class EmployeeList {
+	
+	private String lastname="";
+	private int telephoneNumber
+	
+}

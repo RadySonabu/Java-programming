@@ -1,0 +1,23 @@
+package tester;
+
+import java.util.ArrayList;
+
+import model.Student;
+
+public class StudentListTester {
+	
+	public static void main(String[] args) {
+		
+		 int studID = 0;
+		 String lastname = "";
+		 String firstname = "";
+		 int programID = 0;
+	 
+	 //instantiate Student Object
+		 Student student = new Student();
+		 
+		 //create a ontainer to store student data
+		 ArrayList<Student> studentlist = new ArrayList<Student>();
+		 
+	}
+}

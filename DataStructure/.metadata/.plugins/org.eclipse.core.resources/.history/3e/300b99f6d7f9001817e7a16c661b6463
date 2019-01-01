@@ -1,0 +1,55 @@
+package tester;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.concurrent.SynchronousQueue;
+
+import model.Employee;
+
+
+public class EmployeeListTester {
+	public static void main(String[] args) {
+		 String firstname;
+		 String lastname;
+		 int employee_id;
+		 int contact_number;
+
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Employee> emplist = new ArrayList<Employee>(10);
+		
+		for (int i = 0; i < 2; i++) {
+			Employee employee = new Employee();
+			
+			System.out.println("Enter firstname: ");
+			firstname = scanner.next();
+			System.out.println("Enter lastname: ");
+			lastname = scanner.next();
+			System.out.println("Enter employee id; ");
+			employee_id = scanner.nextInt();
+			System.out.println("Entet contact number: ");
+			contact_number = scanner.nextInt();
+			
+			employee.setFirstname(firstname);
+			employee.setLastname(lastname);
+			employee.setEmployee_id(employee_id);
+			employee.setContact_number(contact_number);
+			
+			emplist.add(employee);
+		}
+		
+		System.out.println("Enter details: ");
+		String detail = scanner.next();
+		
+		if(emplist.contains(detail)){
+			for (Employee employee : emplist) {
+				System.out.println(employee.getFirstname());
+				System.out.println(employee.getLastname());
+				System.out.println(employee.getEmployee_id());
+				System.out.println(employee.getContact_number());
+			}
+		}
+		
+		
+		
+	}
+}
